@@ -1,23 +1,24 @@
- body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-}
-body, h1{
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background-color: #9c93ff;
-    color: rgb(0, 0, 0);
+    color: #000;
     padding: 20px;
     text-align: center;
 }
-#buttons{
+
+#buttons {
     display: flex;
     justify-content: center;
     background-color: antiquewhite;
     padding: 2em;
 }
-.btn{
+
+.btn {
     margin: 0 10px;
     padding: 10px 20px; 
     border: none; 
@@ -25,23 +26,36 @@ header{
     cursor: pointer;
     transition: background-color 0.3s ease; 
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #9c93ff;
 }
+
 #gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
 }
+
 img {
-    max-width: 45%;
-    height: auto;
+    max-width: 50em;
+    height: 20em;
     margin: 10px; 
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 img:hover {
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+    img {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+
+
